@@ -18,5 +18,7 @@ The notebooks included here:
 
 All python code can be run on Docker and a matching environment can be obtained by running `docker pull TBD`
 
+All matlab code can be run in XYZ.
+
 # Data Access
 All data is included either in this repository in the data directory (e.g. the SO-PACE and formatted Valente data) or pulled from NASA using `earthaccess` and code in the files above precisely specifies pulling this exact data.
