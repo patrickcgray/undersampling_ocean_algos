@@ -1,6 +1,6 @@
 This repository contains the code for the manuscript "*Training-domain gaps in data-driven ocean color algorithms*" under review at Geophysical Research Letters.
 
-Authors: Patrick Clifton Gray<sup>\*,1</sup>, Charlotte Begouen Demeaux<sup>1</sup>, Alison Chase<sup>2</sup>, Robert Frouin<sup>3</sup>, Emmanuel Boss<sup>\1</sup> 
+Authors: Patrick Clifton Gray<sup>\*,1</sup>, Charlotte Begouen Demeaux<sup>1</sup>, Alison Chase<sup>2</sup>, Robert Frouin<sup>3</sup>, Emmanuel Boss<sup>1</sup> 
 
 1. School of Marine Sciences, University of Maine, Orono, ME, USA
 2. Applied Physics Laboratory, University of Washington, Seattle, WA, USA
@@ -12,13 +12,11 @@ Abstract: Bio-optical algorithms serve a critical role, enabling satellite-based
 
 ## Code access
 The notebooks included here:
-1.  `exploring_modis_insitu_space.ipynb` builds convex hulls in 2 and 3D using Valente and analyzes PACE and MODIS data using this geometry.
+1.  `exploring_modis_insitu_space.ipynb` builds convex hulls in 2D to 7D using Valente and analyzes PACE and MODIS data using this geometry.
 2.  `convex_hull_seasonality.ipynb` builds a convex hull using Valente and analyzes a full year of global PACE data to inspect trends and means.
 3.  `algo_bias_estimates.ipynb` builds a convex hull using the NOMAD dataset to exactly match the NASA chlorophyll-a algorithm and compares the error when predictions are made beyond the convex hull. Some supplemental figures comparing Valent and NOMAD are also made.
 
-All python code can be run on Docker and a matching environment can be obtained by running `docker pull TBD`
-
-All matlab code can be run in XYZ.
+All python code can be run on Docker and is likely to work on most scientific computing environments but an exactly a matching environment can be obtained by copying the CryoCloud Docker image: https://github.com/CryoInTheCloud/hub-image.
 
 # Data Access
 All data is included either in this repository in the data directory (e.g. the SO-PACE and formatted Valente data) or pulled from NASA using `earthaccess` and code in the files above precisely specifies pulling this exact data.
